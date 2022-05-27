@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: var(--typeface-red-hat-display);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: var(--spacing);
 }
 
@@ -46,16 +46,18 @@ h4 {
 
 h3 {
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
   font-weight: 700;
+  font-size: 1.3rem;
 }
 
 p {
   color: var(--color-text);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 a {
@@ -67,12 +69,97 @@ button {
   box-sizing: inherit;
 }
 
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Utilities */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+/* Card */
+
+.card {
+  max-width: 320px;
+  border-radius: 15px;
+  box-shadow: 2rem 2rem 5rem 1rem whitesmoke, -2rem -2rem 5rem 1rem whitesmoke;
+}
+
+.card__header {
+  text-align: center;
+  padding: 3rem 3.5rem;
+}
+
+.card__body {
+  padding: 0 4rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Badge */
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.badge img {
+  width: 32px;
+  margin-top: 5px;
+}
+
+.badge__link a {
+  text-decoration: underline;
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.badge p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Buttons */
+
+.card__buttons {
+  padding: 0 4rem 3rem;
+}
+
+.btn {
+  display: block;
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+
+.btn-link {
+  display: block;
+  color: var(--color-text);
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
 /* Attribution */
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }

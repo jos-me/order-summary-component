@@ -26,27 +26,43 @@
   </head>
   <body>
     <main>
-      <section>
-        <article>
-          <h3>Order Summary</h3>
-          <p>
-            You can now listen to millions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
-        </article>
+      <div class="container">
+        <section class="card card-overlay">
+          <div class="card__image">
+            <img src="images/illustration-hero.svg" alt="" />
+          </div>
+          <div class="card__content">
+            <article class="card__header">
+              <h3 class="card__heading">Order Summary</h3>
+              <p class="card__lead">
+                You can now listen to millions of songs, audiobooks, and
+                podcasts on any device anywhere you like!
+              </p>
+            </article>
 
-        <article>
-          <h4>Annual Plan</h4>
-          <p>$59.99/year</p>
-          <a href="">Change</a>
-        </article>
+            <article class="card__body">
+              <div class="badge">
+                <div class="badge__image">
+                  <img src="images/icon-music.svg" alt="" />
+                </div>
+                <div class="badge__title">
+                  <h4>Annual Plan</h4>
+                  <p>$59.99/year</p>
+                </div>
+              </div>
+              <div class="badge__link">
+                <a href="">Change</a>
+              </div>
+            </article>
 
-        <article class="card__buttons">
-          <button type="submit">Proceed to Payment</button>
+            <article class="card__buttons">
+              <a href="" class="btn btn-primary">Proceed to Payment</a>
 
-          <a href="">Cancel Order</a>
-        </article>
-      </section>
+              <a href="" class="btn-link">Cancel Order</a>
+            </article>
+          </div>
+        </section>
+      </div>
     </main>
 
     <div class="attribution">
