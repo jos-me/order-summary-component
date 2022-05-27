@@ -13,6 +13,18 @@
   --color-accent: var(--color-very-pale-blue);
   --color-headings: var(--dark-blue);
   --color-text: var(--desaturated-blue);
+
+  /* Typography */
+
+  --text-base-size: 16px;
+  --typeface-red-hat-display: "Red Hat Display", Arial, Helvetica, sans-serif;
+  --spacing: 1.5;
+}
+
+body {
+  font-family: var(--typeface-red-hat-display);
+  font-size: var(--text-base-size);
+  line-height: var(--spacing);
 }
 
 h3,
@@ -20,8 +32,20 @@ h4 {
   color: var(--color-headings);
 }
 
+h3 {
+  font-weight: 900;
+}
+
+h4 {
+  font-weight: 700;
+}
+
 p {
   color: var(--color-text);
+}
+
+button {
+  font: inherit;
 }
 
 /* Attribution */
