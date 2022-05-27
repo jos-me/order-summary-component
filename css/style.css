@@ -16,14 +16,26 @@
 
   /* Typography */
 
-  --text-base-size: 16px;
+  --text-base-size: 62.5%;
   --typeface-red-hat-display: "Red Hat Display", Arial, Helvetica, sans-serif;
   --spacing: 1.5;
 }
 
+/* RESET DEFAULT STYLES */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--text-base-size);
+}
+
 body {
   font-family: var(--typeface-red-hat-display);
-  font-size: var(--text-base-size);
+  font-size: 1.6rem;
   line-height: var(--spacing);
 }
 
@@ -34,6 +46,7 @@ h4 {
 
 h3 {
   font-weight: 900;
+  font-size: 2.2rem;
 }
 
 h4 {
@@ -42,10 +55,16 @@ h4 {
 
 p {
   color: var(--color-text);
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
   font: inherit;
+  box-sizing: inherit;
 }
 
 /* Attribution */
