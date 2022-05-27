@@ -102,6 +102,11 @@ img {
   align-items: center;
 }
 
+/* Overlay */
+.card-overlay {
+  overflow: hidden;
+}
+
 /* Badge */
 
 .badge {

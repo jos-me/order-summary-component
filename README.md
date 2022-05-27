@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- frontend mentor [solution](https://your-solution-url.com)
+- project [ live preview](https://jos-me.github.io/order-summary-component/)
 
 ## My process
 
