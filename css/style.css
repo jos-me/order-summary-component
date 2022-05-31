@@ -4,7 +4,7 @@
   --color-pale-blue: hsl(225, 100%, 94%);
   --color-bright-blue: hsl(245, 75%, 52%);
   --color-very-pale-blue: hsl(225, 100%, 98%);
-  --desaturated-blue: hsl(224, 23%, 55%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
   --color-white: hsl(0, 0%, 100%);
 
@@ -12,7 +12,7 @@
   --color-secondary: var(--color-pale-blue);
   --color-accent: var(--color-very-pale-blue);
   --color-headings: var(--dark-blue);
-  --color-text: var(--desaturated-blue);
+  --color-text: var(--color-desaturated-blue);
 
   /* Typography */
 
@@ -42,6 +42,11 @@ body {
   font-family: var(--typeface-red-hat-display);
   font-size: 1.5rem;
   line-height: var(--spacing);
+  background-color: var(--color-pale-blue);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-size: contain;
 }
 
 h3,
@@ -84,7 +89,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 1050px;
 }
 
 /* Card */
@@ -92,7 +97,8 @@ img {
 .card {
   max-width: 320px;
   border-radius: 15px;
-  box-shadow: 2rem 2rem 5rem 1rem whitesmoke, -2rem -2rem 5rem 1rem whitesmoke;
+  background-color: var(--color-accent);
+  box-shadow: 2rem 2rem 5rem 1rem transparent, -2rem -2rem 5rem 1rem transparent;
 }
 
 .card__header {
@@ -108,6 +114,7 @@ img {
 }
 
 /* Overlay */
+
 .card-overlay {
   overflow: hidden;
 }
@@ -188,10 +195,19 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: var(--size-mobile)) {
-  h3 {
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
+  .container {
+    height: 100vh;
+  }
+
+  .card__heading {
     font-size: 1.8rem;
   }
+
   p {
     font-size: 1.5rem;
   }
