@@ -184,6 +184,17 @@ img {
   color: var(--color-headings);
 }
 
+/* Attribution */
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (max-width: 375px) {
   body {
     background-image: url(../images/pattern-background-mobile.svg);

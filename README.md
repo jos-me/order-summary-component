@@ -28,7 +28,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![A screenshot of my solution](./screenshot.png)
+![A screenshot of my solution](./screenshot-mobile.png)
 
 ### Links
 
