@@ -49,18 +49,18 @@ body {
   background-size: contain;
 }
 
-h3,
-h4 {
+h1,
+h2 {
   color: var(--color-headings);
 }
 
-h3 {
+h1 {
   font-weight: 900;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-h4 {
+h2 {
   font-weight: 700;
   font-size: 1.3rem;
 }
